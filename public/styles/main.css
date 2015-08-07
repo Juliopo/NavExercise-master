@@ -20,7 +20,30 @@ h1 {
     text-align: center;
 }
 
+.navigation {
+    position: relative;
+    display: block;
+    height: 70px;
+}
+
+.navigation .logo {
+    font-size: 1.4em;
+    float: left;
+    margin: 20px 48px 20px 24px;
+}
+
+.navigation .logo a img{
+    max-width: 60px;
+}
+
 .content {
     height: 640px;
     background: url('../images/background-image.jpg');
+    margin-bottom: 60px;
+}
+
+.footer p {
+    max-width: 968px;
+    text-align: center;
+    margin: 0 auto;
 }
