@@ -1,0 +1,67 @@
+@media only screen and (min-width: 992px) {
+
+    .navigation {
+        position: relative;
+        height: 72px;
+    }
+
+    .navigation .logo {
+        font-size: 1.4em;
+        float: left;
+    }
+
+    .navigation .logo a {
+        padding: 24px 48px 24px 24px;
+    }
+
+    .navigation ul {
+        font-size: 1.4em;
+    }
+
+    .navigation  li {
+        float: left;
+        position: relative;
+    }
+
+    .navigation  a {
+        color: #FFFFFF;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        padding: 24px;
+    }
+
+    .navigation .sub {
+        display: none;
+        position: absolute;
+        background-color: white;
+
+    }
+
+    .navigation ul ul {
+        display: none;
+    }
+
+    .navigation ul li:hover > ul {
+        display: block;
+    }
+
+    .navigation .sub a {
+        font-family: 'Galaxie';
+        color: black;
+        font-size: .4em;
+        text-align: left;
+        width: 190px;
+    }
+
+    .navigation li:hover > a {
+        background-color: white;
+        color: #ec008c;
+    }
+
+    .content {
+        height: 640px;
+        background: url('../images/background-image.jpg');
+    }
+
+}

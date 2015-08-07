@@ -1,8 +1,11 @@
 @import "fonts.css";
+@import "desktop.css";
 
 body {
     background: #ec008c;
     color: #fff;
+    font: 20vmin/1 HUGEAvantGardeBold;
+    font-size: 100%;
 }
 
 h1 {
@@ -15,31 +18,4 @@ h1 {
     font: 20vmin/1 HUGEAvantGardeBold;
     letter-spacing: -0.06em;
     text-align: center;
-}
-
-.navigation {
-    width: 100%;
-    height: 30px;
-    background-color: #98bf21;
-}
-
-.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation ul li {
-    display: inline;
-    float: left;
-}
-
-.navigation ul li a {
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #98bf21;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
