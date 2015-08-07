@@ -19,3 +19,8 @@ h1 {
     letter-spacing: -0.06em;
     text-align: center;
 }
+
+.content {
+    height: 640px;
+    background: url('../images/background-image.jpg');
+}
