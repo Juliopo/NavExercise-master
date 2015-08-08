@@ -29,18 +29,37 @@ var app = (function() {
 
         for (var key in navData) {
             var obj = navData[key],
-                navTemp = navTemplate;
+                navTemp = navTemplate,
+                subNavTemp = subNavTemplate,
+                placeHolderSubnav;
 
             if (navData.hasOwnProperty(key)) {
                 for (var prop in obj) {
-                    var subNavTemp = subNavTemplate;
+                    var subObj = obj.items[key];
                     if (obj.hasOwnProperty(prop)) {
                         navTemp = navTemp.replace('{{' + prop + '}}', obj[prop]);
                     }
                 }
 
                 placeHolderNav.innerHTML += navTemp;
-                //placeHolderSubnav =
+                placeHolderSubnav = document.getElementsByClassName('sub');
+
+                if (obj.items.length) {
+                    for (var sub in obj.items) {
+                        if (obj.items.hasOwnProperty(sub)) {
+                            for (var l in obj.items[sub]) {
+                                subNavTemp = subNavTemp.replace('{{' + l + '}}', obj.items[sub][l]);
+                            }
+                        }
+                        placeHolderSubnav[key].innerHTML += subNavTemp;
+                        subNavTemp = subNavTemplate;
+                    }
+                } else {
+                    //placeHolderNav.removeChild(placeHolderSubnav[key][0]);
+                }
+                // for (var sub in placeHolderSubnav) {
+
+                // }
             }
         }
     }
