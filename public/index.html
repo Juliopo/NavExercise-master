@@ -2,31 +2,16 @@
 <html>
 <head>
   <title>HUGE NavExercise</title>
-  <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
 <!-- <h1>Hello</h1> -->
 	<div class="navigation">
 		<div class="logo">
-			<a href="#"><img src="../images/HUGE-white.png"></a>
+			<a href="#"><img src="images/HUGE-white.png"></a>
 		</div>
 		<nav>
-			<ul>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">About</a></li>
-				<li>
-					<a href="#">Carrers</a>
-					<ul class="sub">
-						<li><a href="#">client services</a></li>
-						<li><a href="#">client services</a></li>
-					</ul>
-
-				</li>
-				<li><a href="#">Ideas</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Contact</a></li>
+			<ul class="nav-template">
 			</ul>
 		</nav>
 	</div>
@@ -38,4 +23,21 @@
 		</p>
 	</div>
 </body>
+
+<!-- Templates -->
+<template id="navTemplate">
+	<li>
+		<a href="{{url}}">{{label}}</a>
+		<ul class="sub">
+		</ul>
+	</li>
+</template>
+
+<template id="subNavTemplate">
+	<li>
+		<a href="{{items.url}}">{{items.label}}</a>
+	</li>
+</template>
+
+<script src="js/main.js"></script>
 </html>

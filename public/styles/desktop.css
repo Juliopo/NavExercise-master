@@ -1,19 +1,5 @@
 @media only screen and (min-width: 992px) {
 
-    .navigation {
-        position: relative;
-        height: 70px;
-    }
-
-    .navigation .logo {
-        font-size: 1.4em;
-        float: left;
-        margin: 20px 48px 20px 24px;
-    }
-
-    .navigation .logo a img{
-        max-width: 60px;
-    }
 
     .navigation ul {
         font-size: 1.4em;
