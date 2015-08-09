@@ -17,12 +17,13 @@ var app = (function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var response = JSON.parse(xmlhttp.responseText);
                 templetizate(response);
+                return response;
             }
         };
     }
 
-    function templetizate(data) {
-        var navData = data.items,
+    function templetizate(context) {
+        var navData = context.items,
             navTemplate = document.getElementById('navTemplate').innerHTML,
             subNavTemplate = document.getElementById('subNavTemplate').innerHTML,
             placeHolderNav = document.getElementsByClassName('nav-template')[0];
@@ -54,12 +55,7 @@ var app = (function() {
                         placeHolderSubnav[key].innerHTML += subNavTemp;
                         subNavTemp = subNavTemplate;
                     }
-                } else {
-                    //placeHolderNav.removeChild(placeHolderSubnav[key][0]);
                 }
-                // for (var sub in placeHolderSubnav) {
-
-                // }
             }
         }
     }
