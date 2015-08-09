@@ -54,6 +54,7 @@ var app = (function() {
                         }
                         placeHolderSubnav[key].innerHTML += subNavTemp;
                         subNavTemp = subNavTemplate;
+                        placeHolderSubnav[key].parentElement.className = 'active close';
                     }
                 }
             }

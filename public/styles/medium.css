@@ -1,6 +1,6 @@
-@media only screen and (min-width: 992px) {
-
-    .navigation  li {
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+	
+	.navigation  li {
         float: left;
         position: relative;
     }
@@ -10,8 +10,8 @@
         text-align: center;
         display: block;
         text-decoration: none;
-        padding: 13px 24px 9px 24px;
-        font: 21px/48px HUGEAvantGardeBold;
+        padding: 13px 12px 9px 18px;
+        font: 18px/48px HUGEAvantGardeBold;
     }
 
     .navigation .sub {
@@ -29,16 +29,15 @@
     }
 
     .navigation .sub a {
-        font:16px/48px 'Galaxie';
+        font:14px/48px 'Galaxie';
         color: black;
         text-align: left;
-        width: 190px;
+        width: 130px;
         padding: 0 24px;
     }
 
     .content {
-        margin-bottom: 60px;
-        height: 640px;
+        height: 490px;
     }
 
 }

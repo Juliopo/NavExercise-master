@@ -1,5 +1,7 @@
 @import "reset.css";
 @import "fonts.css";
+@import "small.css";
+@import "medium.css";
 @import "desktop.css";
 
 body {
@@ -35,14 +37,26 @@ h1 {
     max-width: 60px;
 }
 
+.navigation li:hover > a {
+    background-color: white;
+    color: #ec008c;
+}
+
+.navigation .sub li:hover > a {
+    background-color: #eee;
+}
+
 .content {
-    height: 640px;
+    width: 100%;
     background: url('../images/background-image.jpg');
-    margin-bottom: 60px;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
 }
 
 .footer p {
     max-width: 968px;
     text-align: center;
     margin: 0 auto;
+    background-color: white;
 }
