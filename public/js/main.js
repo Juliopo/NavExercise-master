@@ -6,7 +6,7 @@ var app = (function() {
         jsonRequest(url);
     }
 
-    function jsonRequest() {
+    function jsonRequest(url) {
         var xmlhttp = new XMLHttpRequest();
 
         xmlhttp.open("GET", url, true);
@@ -58,10 +58,17 @@ var app = (function() {
                 }
             }
         }
+
+        return {
+            "placeHolderNav": placeHolderNav,
+            "placeHolderSubnav": placeHolderSubnav
+        }
     }
 
     return {
-        init: init
+        init: init,
+        jsonRequest:jsonRequest,
+        templetizate: templetizate
     }
 
 })();

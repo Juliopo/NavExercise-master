@@ -15,7 +15,8 @@
         text-align: center;
         display: block;
         text-decoration: none;
-        padding: 24px;
+        padding: 13px 24px 9px 24px;
+        font: 21px/48px HUGEAvantGardeBold;
     }
 
     .navigation .sub {
@@ -33,16 +34,20 @@
     }
 
     .navigation .sub a {
-        font-family: 'Galaxie';
+        font:16px/48px 'Galaxie';
         color: black;
-        font-size: .4em;
         text-align: left;
         width: 190px;
+        padding: 0 24px;
     }
 
     .navigation li:hover > a {
         background-color: white;
         color: #ec008c;
+    }
+
+    .navigation .sub li:hover > a {
+        background-color: #eee;
     }
 
 }
