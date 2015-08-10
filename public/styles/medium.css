@@ -65,4 +65,9 @@
         height: 490px;
     }
 
+    .footer p {
+        margin: 0 auto;
+        font:24px/36px 'Galaxie';
+    }   
+
 }
