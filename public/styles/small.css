@@ -10,13 +10,15 @@
         padding-top: 12px;
         width: 60%;
         margin-top: 70px;
+        z-index: 2000;
     }
 
     .navigation .logo {
         display: none;
     }
 
-    .close-nav {    
+    .close-nav {   
+        display:none; 
         float: right;
         margin: 24px 12px 24px 0;
         font: 16px/24px HUGEAvantGardeBold;
@@ -41,6 +43,7 @@
         padding: 12px 0 12px 0;
    		margin: 0;
    		width: 100%;
+
     }
 
     .nav-template.animate-in {
@@ -82,7 +85,7 @@
         text-align: left;
         display: block;
         text-decoration: none;
-        padding: 13px 12px 9px 18px;
+        padding: 13px 12px 9px 24px;
         font: 16px/26px HUGEAvantGardeBold;
     }
 

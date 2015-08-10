@@ -13,7 +13,25 @@
         padding: 13px 12px 9px 18px;
         font: 18px/48px HUGEAvantGardeBold;
     }
+
+    .content h1 {
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font: 20vmin/1 HUGEAvantGardeBold;
+        letter-spacing: -0.06em;
+        text-align: center;
+    }
+
     .nav-mobile {
+        display: none;
+    }
+
+    .close-nav {
         display: none;
     }
 

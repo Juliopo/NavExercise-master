@@ -5,6 +5,19 @@
         position: relative;
     }
 
+    .content h1 {
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font: 20vmin/1 HUGEAvantGardeBold;
+        letter-spacing: -0.06em;
+        text-align: center;
+    }
+
     .navigation ul  a {
         color: #FFFFFF;
         text-align: center;
@@ -12,6 +25,10 @@
         text-decoration: none;
         padding: 13px 24px 11px 24px;
         font: 21px/48px HUGEAvantGardeBold;
+    }
+
+    .close-nav {
+        display: none;
     }
 
     .navigation .sub {
@@ -43,7 +60,6 @@
     }
 
     .content {
-        margin-bottom: 60px;
         height: 640px;
     }
 
