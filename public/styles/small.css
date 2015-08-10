@@ -15,7 +15,15 @@
     .navigation .logo {
         display: none;
     }
-    
+
+    .logo.show-logo {
+        display: block;
+    }
+
+    .logo.hide-logo {
+        display: none;
+    }
+
     .nav-mobile {
         display: block;
     }
@@ -30,6 +38,18 @@
         padding: 12px 0 12px 0;
    		margin: 0;
    		width: 100%;
+    }
+
+    .nav-template.animate-in {
+        left: 0;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease;
+    }
+
+    .nav-template.animate-out {
+        left: -60%;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease;
     }
 
     .hide {

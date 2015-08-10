@@ -61,7 +61,7 @@ var app = (function() {
                 }
             }
         }
-
+        bindEvents();
         return {
             "placeHolderNav": placeHolderNav,
             "placeHolderSubnav": placeHolderSubnav
@@ -76,6 +76,27 @@ var app = (function() {
         } else if(element.className.indexOf('inactive') < 0) {
             element.className = 'sub hide';
         }
+    }
+
+    function bindEvents() {
+        var mobileNavButton = document.getElementsByClassName('nav-mobile')[0],
+            navigation = document.getElementsByClassName('nav-template')[0];
+            toggleMobile(mobileNavButton, navigation);       
+    }
+
+    function toggleMobile(mobileNavButton, navigation) {
+        navigation.className = 'nav-template animate-out';
+        mobileNavButton.addEventListener("click", function() {
+            if (navigation.className.indexOf('animate-in') > 0) {
+                navigation.className = 'nav-template animate-out';
+                document.getElementsByClassName('logo')[0].className = 'logo hide-logo';
+                mobileNavButton.className = 'nav-template animate-out hide';
+            } else {
+                navigation.className = 'nav-template animate-in';
+                document.getElementsByClassName('logo')[0].className = 'logo show-logo';
+                mobileNavButton.className = 'nav-template animate-in hide';
+            }
+        }, false);
     }
 
     return {
