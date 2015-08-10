@@ -28,15 +28,15 @@
 <!-- Templates -->
 <template id="navTemplate">
 	<li>
-		<a href="{{url}}">{{label}}</a>
-		<ul class="sub">
+		<a href="{{url}}" onclick="app.toggle(this)">{{label}}</a>
+		<ul class="sub hide">
 		</ul>
 	</li>
 </template>
 
 <template id="subNavTemplate">
 	<li>
-		<a href="{{url}}">{{label}}</a>
+		<a target="_blank" href="{{url}}">{{label}}</a>
 	</li>
 </template>
 

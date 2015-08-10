@@ -56,6 +56,8 @@ var app = (function() {
                         subNavTemp = subNavTemplate;
                         placeHolderSubnav[key].parentElement.className = 'active close';
                     }
+                } else {
+                    placeHolderSubnav[key].className = 'sub inactive';
                 }
             }
         }
@@ -66,9 +68,20 @@ var app = (function() {
         }
     }
 
+    function toggle(context) {
+        var element = context.parentElement.getElementsByClassName('sub')[0];
+        if (element.className.indexOf('hide') > 0) {
+            element.className = 'sub show';
+
+        } else if(element.className.indexOf('inactive') < 0) {
+            element.className = 'sub hide';
+        }
+    }
+
     return {
         init: init,
         jsonRequest:jsonRequest,
+        toggle: toggle,
         templetizate: templetizate
     }
 

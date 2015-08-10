@@ -17,11 +17,19 @@
     }
 
     .navigation .sub {
-        display: none;
+        display: block;
         position: relative;
         padding: 12px 0 12px 0;
    		margin: 0;
    		width: 100%;
+    }
+
+    .hide {
+        display: none !important;
+    }
+
+    .show {
+        display: block !important;
     }
 
     .navigation .sub a {

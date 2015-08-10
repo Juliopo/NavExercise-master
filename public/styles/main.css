@@ -24,13 +24,12 @@ h1 {
 .navigation {
     position: relative;
     display: block;
-    height: 70px;
+    height: 72px;
 }
 
 .navigation .logo {
-    font-size: 1.4em;
     float: left;
-    margin: 20px 48px 20px 24px;
+    margin: 23px 48px 20px 24px;
 }
 
 .navigation .logo a img{
@@ -44,6 +43,10 @@ h1 {
 
 .navigation .sub li:hover > a {
     background-color: #eee;
+}
+
+.inactive {
+    display: none !important;
 }
 
 .content {
