@@ -82,14 +82,16 @@ var app = (function() {
         var mobileNavButton = document.getElementsByClassName('nav-mobile')[0],
             closeNavButton = document.getElementsByClassName('close-nav')[0],
             logo = document.getElementsByClassName('logo')[0],
-            navigation = document.getElementsByClassName('nav-template')[0];
-            toggleMobile(mobileNavButton, mobileNavButton, closeNavButton, logo, navigation);
-            toggleMobile(closeNavButton, mobileNavButton, closeNavButton, logo, navigation);
+            navigation = document.getElementsByClassName('nav-template')[0],
+            traslucent = document.getElementsByClassName('translucent')[0];
+
+            toggleMobileMenu(mobileNavButton, mobileNavButton, closeNavButton, logo, navigation, traslucent);
+            toggleMobileMenu(closeNavButton, mobileNavButton, closeNavButton, logo, navigation, traslucent);
 
 
     }
 
-    function toggleMobile(eventButton, mobileNavButton, closeNavButton, logo,  navigation) {
+    function toggleMobileMenu(eventButton, mobileNavButton, closeNavButton, logo,  navigation, traslucent) {
         navigation.className = 'nav-template animate-out';
         eventButton.addEventListener("click", function() {
             if (navigation.className.indexOf('animate-in') > 0) {
@@ -97,11 +99,15 @@ var app = (function() {
                 logo.className = 'logo hide';
                 closeNavButton.className = 'close-nav hide';
                 mobileNavButton.className = 'nav-mobile show';
+                traslucent.className = 'translucent off';
+                console.log(traslucent.className);
+
             } else {
                 navigation.className = 'nav-template animate-in';
                 logo.className = 'logo show';
                 mobileNavButton.className = 'nav-mobile hide';
                 closeNavButton.className = 'close-nav show';
+                traslucent.className = 'translucent on';
             }
         }, false);
     }

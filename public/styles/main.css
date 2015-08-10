@@ -59,7 +59,20 @@ body {
     position: absolute;
     cursor: pointer;
     outline: none;
-    margin-top: 12px;
+    margin: 12px 0px 12px 24px;
+}
+
+.translucent.on {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.translucent.off {
+    display: none;
 }
 
 .nav-mobile:after {
@@ -74,13 +87,13 @@ body {
 }
 
 .footer {
+    position: relative;
     width: 100%;
     background-color: white;
 }
+
 .footer p {
     max-width: 968px;
-    text-align: center;
+    text-align: justify;
     color: black;
-    margin: 0 auto;
-    font:16px/20px 'Galaxie';
 }
