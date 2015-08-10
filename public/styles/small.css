@@ -12,6 +12,14 @@
         margin-top: 70px;
     }
 
+    .navigation .logo {
+        display: none;
+    }
+    
+    .nav-mobile {
+        display: block;
+    }
+
     .navigation ul li:hover > a{
         background-color: #eee;
     }

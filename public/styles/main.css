@@ -56,6 +56,29 @@ h1 {
     background-color: white;
     background-repeat: no-repeat;
 }
+.nav-mobile {
+    background: #ec008c;
+    border: none;
+    width: 48px;
+    height: 45px;
+    text-indent: -900em;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    margin-top: 12px;
+}
+
+.nav-mobile:after {
+    content: '';
+    position: absolute;
+    width: 68%;
+    height: 5px;
+    background: #fff;
+    top: 10px;
+    left: 16%;
+    box-shadow: 0 10px 0 #fff, 0 20px 0 #fff;
+}
 
 .footer p {
     max-width: 968px;

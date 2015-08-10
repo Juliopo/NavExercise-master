@@ -21,6 +21,10 @@
         padding-top: 12px;
     }
 
+    .nav-mobile {
+        display: none;
+    }
+
     .navigation ul ul {
         display: none;
     }

@@ -13,6 +13,9 @@
         padding: 13px 12px 9px 18px;
         font: 18px/48px HUGEAvantGardeBold;
     }
+    .nav-mobile {
+        display: none;
+    }
 
     .navigation .sub {
         display: none;
