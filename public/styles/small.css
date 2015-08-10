@@ -16,13 +16,16 @@
         display: none;
     }
 
-    .logo.show-logo {
-        display: block;
+    .close-nav {    
+        float: right;
+        margin: 24px 12px 24px 0;
+        font: 16px/24px HUGEAvantGardeBold;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
     }
 
-    .logo.hide-logo {
-        display: none;
-    }
 
     .nav-mobile {
         display: block;
