@@ -27,7 +27,7 @@ var app = (function() {
             navTemplate = document.getElementById('navTemplate').innerHTML,
             subNavTemplate = document.getElementById('subNavTemplate').innerHTML,
             icon = document.createElement("div");
-            icon.className = 'icon-up',
+            icon.className = 'icon up',
             placeHolderNav = document.getElementsByClassName('nav-template')[0];
 
         for (var key in navData) {
@@ -72,12 +72,16 @@ var app = (function() {
     }
 
     function toggle(context) {
-        var element = context.parentElement.getElementsByClassName('sub')[0];
+        var element = context.parentElement.getElementsByClassName('sub')[0],
+            icon = context.parentElement.getElementsByClassName('icon')[0];
+
         if (element.className.indexOf('hide') > 0) {
             element.className = 'sub show';
+            icon.className = 'icon down';
 
         } else if(element.className.indexOf('inactive') < 0) {
             element.className = 'sub hide';
+            icon.className = 'icon up';
         }
     }
 

@@ -71,7 +71,7 @@
     	font:14px/26px 'Galaxie';
     }
 
-    .active .icon-up {
+    .active .icon.up{
         position: absolute;
         right: 20px;
         width: 36px;
@@ -80,11 +80,12 @@
         background: url(../images/open.svg);
     }
 
-    .active .icon-down {
+    .active .icon.down {
         position: absolute;
         right: 20px;
         width: 36px;
         height: 32px;
+        top: 0px;
         background: url(../images/close.svg);
     }
 
