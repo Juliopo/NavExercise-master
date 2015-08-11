@@ -105,3 +105,24 @@ Measurements are specified in pixels. Dimensions are fluid unless specified.
   * the logo and toggle button should “slide” from right to left
   * the close icon should change to the open icon
   * the mask should be hidden
+
+
+ # Documentation
+ Navigation Exercise
+
+##Overview
+
+For this exercise, I made a navigation page getting all the data from a json file, and showing it using a templatization system that I also made in pure js.
+I didn’t use any js plugin, any  SASS compilation and any imports like bootstrap, I tried to be sharp and get all the  interactions with using pure CSS 3 html5 and js.
+
+
+##Technical information
+
+To achieve this develop with the specifications, I use a Templatization system where I use html modules templates  filled with each iteration of the  json content , this is a similar behaviour of the handleBars js template system, where I use a {{}} mustache symbol to replace the content of a context (in this case the nav.json), to achieve this I use the templetizate(context) function and pass the context like parameter, you can check out in the code.
+Also I use a Modular design pattern to make a few things “private” and return just the public functions to test it into the unit test.
+
+
+##Responsive Approach
+
+For the css, I used 3 kinds of imports in a main.css to reduce the http request in the index.html, that imports represent the screen size designs for , small, medium and large screen resolution, that allows to make the navigation responsive and achieve all the interactions requested in the exercise, I also use css3 selectors and interactions to have a nice User experience.
+
