@@ -130,7 +130,6 @@ var app = (function() {
     return {
         init: init,
         jsonRequest:jsonRequest,
-        toggle: toggle,
         templetizate: templetizate
     }
 
