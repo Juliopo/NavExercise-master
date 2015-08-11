@@ -71,14 +71,21 @@
     	font:14px/26px 'Galaxie';
     }
 
-    .navigation li.active:before > a {
-    	display: block;
-		text-indent: -9999px;
-		width: 100px;
-		height: 82px;
-		background-size: 100px 82px;
-    	background: url(../images/toogle-open.svg) no-repeat top left;;
-  		background-size: 100px 82px; 
+    .active .icon-up {
+        position: absolute;
+        right: 20px;
+        width: 36px;
+        height: 32px;
+        bottom: 14px;
+        background: url(../images/open.svg);
+    }
+
+    .active .icon-down {
+        position: absolute;
+        right: 20px;
+        width: 36px;
+        height: 32px;
+        background: url(../images/close.svg);
     }
 
     .content h1 {

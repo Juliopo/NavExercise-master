@@ -26,6 +26,8 @@ var app = (function() {
         var navData = context.items,
             navTemplate = document.getElementById('navTemplate').innerHTML,
             subNavTemplate = document.getElementById('subNavTemplate').innerHTML,
+            icon = document.createElement("div");
+            icon.className = 'icon-up',
             placeHolderNav = document.getElementsByClassName('nav-template')[0];
 
         for (var key in navData) {
@@ -56,6 +58,7 @@ var app = (function() {
                         subNavTemp = subNavTemplate;
                         placeHolderSubnav[key].parentElement.className = 'active close';
                     }
+                    placeHolderSubnav[key].parentElement.appendChild(icon);
                 } else {
                     placeHolderSubnav[key].className = 'sub inactive';
                 }
@@ -87,20 +90,20 @@ var app = (function() {
 
             toggleMobileMenu(mobileNavButton, mobileNavButton, closeNavButton, logo, navigation, traslucent);
             toggleMobileMenu(closeNavButton, mobileNavButton, closeNavButton, logo, navigation, traslucent);
-
-
+            toggleMobileMenu(traslucent, mobileNavButton, closeNavButton, logo, navigation, traslucent);
     }
 
     function toggleMobileMenu(eventButton, mobileNavButton, closeNavButton, logo,  navigation, traslucent) {
         navigation.className = 'nav-template animate-out';
+
         eventButton.addEventListener("click", function() {
+
             if (navigation.className.indexOf('animate-in') > 0) {
                 navigation.className = 'nav-template animate-out';
                 logo.className = 'logo hide';
                 closeNavButton.className = 'close-nav hide';
                 mobileNavButton.className = 'nav-mobile show';
                 traslucent.className = 'translucent off';
-                console.log(traslucent.className);
 
             } else {
                 navigation.className = 'nav-template animate-in';
@@ -109,6 +112,7 @@ var app = (function() {
                 closeNavButton.className = 'close-nav show';
                 traslucent.className = 'translucent on';
             }
+
         }, false);
     }
 
