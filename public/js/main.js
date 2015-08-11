@@ -86,7 +86,14 @@ var app = (function() {
             closeNavButton = document.getElementsByClassName('close-nav')[0],
             logo = document.getElementsByClassName('logo')[0],
             navigation = document.getElementsByClassName('nav-template')[0],
+            navigationLink = navigation.getElementsByClassName('active'),
             traslucent = document.getElementsByClassName('translucent')[0];
+
+            for (var i = 0; i < navigationLink.length; i ++) {
+                 navigationLink[i].addEventListener('click', function() {
+                    toggle(this.getElementsByTagName('a')[0]);
+                });
+            }
 
             toggleMobileMenu(mobileNavButton, mobileNavButton, closeNavButton, logo, navigation, traslucent);
             toggleMobileMenu(closeNavButton, mobileNavButton, closeNavButton, logo, navigation, traslucent);
